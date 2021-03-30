@@ -17,7 +17,7 @@ mqtt_connection = mqtt_connection_builder.mtls_from_path(endpoint=os.getenv('IOT
                                                          pri_key_filepath="private.pem.key",
                                                          client_bootstrap=client_bootstrap,
                                                          ca_filepath="AmazonRootCA1.pem",
-                                                         client_id="simplething")
+                                                         client_id="simplethinglistener")
 
 mqtt_connection.connect().result()
 
